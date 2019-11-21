@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "97344678984-48bgq1btbki7vrt0829hcpum7ps2nmjn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chanhee.sojeeeon",
+            "certificate_hash": "e1106d6870509a90f154ffd1e426333789e56bd7"
+          }
+        },
+        {
           "client_id": "97344678984-tjning06ovq9nlsvnhevrf4ccepeppoc.apps.googleusercontent.com",
           "client_type": 3
         }

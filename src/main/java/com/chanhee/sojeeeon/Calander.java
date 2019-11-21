@@ -13,7 +13,6 @@ import static java.util.Calendar.SUNDAY;
 public class Calander extends AppCompatActivity {
     private  final  OneDayDecorator oneDayDecorator= new OneDayDecorator();
    MaterialCalendarView materialCalendarView;
-   Intent intent=new Intent(this,Todo.class);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +23,7 @@ public class Calander extends AppCompatActivity {
             public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) {
 
                 if(selected){
+                    Intent intent=new Intent(Calander.this,TodoActivity.class);
                     startActivity(intent);
                 }
             }
@@ -35,9 +35,6 @@ public class Calander extends AppCompatActivity {
                 .setMaximumDate(CalendarDay.from(2022,10,31))
                 .setCalendarDisplayMode(CalendarMode.MONTHS)
                 .commit();
-
-
-
-
     }
+
 }
